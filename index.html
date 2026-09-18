@@ -107,7 +107,7 @@
 </head>
 <body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
 <!-- HEADER: TopNavBar -->
-<header class="bg-surface-container-lowest sticky top-0 z-50 w-full border-b border-outline-variant transition-all duration-300"><div class="w-full bg-primary text-on-primary border-b border-primary-container text-xs font-label-bold py-2 px-margin-desktop"><div class="max-w-[1200px] mx-auto flex flex-wrap justify-between items-center gap-4"><div class="flex items-center gap-6 flex-wrap"><a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="tel:3212405710"><span class="material-symbols-outlined text-sm">call</span> English: (321) 240-5710</a><a class="hover:text-secondary-fixed text-secondary-fixed transition-colors flex items-center gap-1.5" href="tel:3212290039"><span class="material-symbols-outlined text-sm">support_agent</span> Hablamos Español: (321) 229-0039</a></div><div class="flex items-center gap-4"><span class="hidden sm:inline text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-sm">translate</span> Atención en Español e Inglés</span><div class="inline-flex items-center bg-primary-container rounded-full p-0.5 border border-outline-variant"><span class="flex items-center gap-1 bg-secondary text-white px-2 py-0.5 rounded-full cursor-default text-xs"><span class="material-symbols-outlined text-xs">public</span> EN</span><span class="text-surface-variant hover:text-white px-2 py-0.5 text-xs cursor-pointer">ES</span></div></div></div></div>
+<header class="bg-surface-container-lowest sticky top-0 z-50 w-full border-b border-outline-variant transition-all duration-300"><div class="w-full bg-primary text-on-primary border-b border-primary-container text-xs font-label-bold py-2 px-margin-desktop"><div class="max-w-[1200px] mx-auto flex flex-wrap justify-between items-center gap-4"><div class="flex items-center gap-6 flex-wrap"><a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="tel:3212405710"><span class="material-symbols-outlined text-sm">call</span> English: (321) 240-5710</a><a class="hover:text-secondary-fixed text-secondary-fixed transition-colors flex items-center gap-1.5" href="tel:3212290039"><span class="material-symbols-outlined text-sm">support_agent</span> Hablamos Español: (321) 229-0039</a></div><div class="flex items-center gap-4"><span class="hidden sm:inline text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-sm">translate</span> Atención en Español e Inglés</span></div></div></div>
 <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-[1200px] mx-auto">
 <a class="flex items-center gap-2" href="#">
 <img alt="P&amp;E Flooring Solutions Logo" class="h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASm9P-BvpX-YUUCqs1Peut8G54gJTZofw-C5mbyswaPh6Z9IyZk32CewR7P_aGV32BHCr5CVCV_C9fFvK2TUOu56gnunZgGiVdCHw5_EFysgDRlS_WOUDqm5TK0i4SBtUXVQIJ34stxy51EbRh2xLgNDAD4qmIiu0xaHev_90AMsTEEPoKMKXMVkwiZDNBCyaCEIWO8IRYadVPhszDPUoKfm4G6bLHcXEBcuxJ33bs1QJQ58CozPbMM0zewLTW-R-d75E"/>
@@ -121,7 +121,13 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-bold font-label-bold" href="#">Residential</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-bold font-label-bold" href="#">Commercial</a>
 </nav>
-<div class="hidden md:flex items-center gap-4"><div class="inline-flex items-center bg-surface-container rounded-full p-1 border border-outline-variant text-xs font-label-bold"><span class="flex items-center gap-1 bg-primary text-on-primary px-2.5 py-1 rounded-full cursor-default"><span class="material-symbols-outlined text-xs">public</span> EN</span><a class="text-on-surface-variant hover:text-primary px-2.5 py-1 transition-colors duration-200" href="#">ES</a></div><a class="bg-primary-container text-on-primary px-5 py-2.5 rounded text-label-bold font-label-bold hover:bg-primary transition-colors whitespace-nowrap" href="#">Get a Free Estimate</a></div>
+<div class="hidden md:flex items-center gap-4">
+<div class="inline-flex items-center bg-surface-container rounded-full p-1 border border-outline-variant text-xs font-label-bold select-none" id="lang-switcher">
+<button class="flex items-center gap-1 bg-primary text-on-primary px-2.5 py-1 rounded-full transition-all duration-200" id="btn-lang-en" type="button"><span class="material-symbols-outlined text-xs">public</span> EN</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary px-2.5 py-1 rounded-full transition-all duration-200" id="btn-lang-es" type="button">ES</button>
+</div>
+<a class="bg-primary-container text-on-primary px-5 py-2.5 rounded text-label-bold font-label-bold hover:bg-primary transition-colors whitespace-nowrap" data-lang-en="Get a Free Estimate" data-lang-es="Solicitar Estimación Gratuita" href="#">Get a Free Estimate</a>
+</div>
 <button class="md:hidden text-on-surface flex items-center justify-center p-2">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
@@ -136,11 +142,11 @@
 </div>
 <div class="relative z-10 w-full max-w-[1200px] mx-auto px-margin-desktop py-section-padding flex flex-col lg:flex-row items-center gap-12">
 <div class="w-full lg:w-3/5 text-on-primary">
-<span class="text-label-bold font-label-bold uppercase tracking-widest text-secondary-fixed mb-4 block">TOP RATED FLOORING CONTRACTOR IN ORLANDO, FLORIDA</span>
-<h1 class="text-display-lg font-display-lg mb-6 text-surface-container-lowest">Quality Flooring. Expertly Installed.</h1>
-<p class="text-body-lg font-body-lg mb-8 text-surface-container-low opacity-90 max-w-xl">Top-Rated Orlando Flooring Specialists — Trusted, Licensed &amp; Insured. Serving Residential &amp; Commercial Clients in English &amp; Español with quality, precision, and care.</p>
+<span class="text-label-bold font-label-bold uppercase tracking-widest text-secondary-fixed mb-4 block" data-lang-en="TOP RATED FLOORING CONTRACTOR IN ORLANDO, FLORIDA" data-lang-es="CONTRATISTA DE PISOS #1 EN ORLANDO, FLORIDA">TOP RATED FLOORING CONTRACTOR IN ORLANDO, FLORIDA</span>
+<h1 class="text-display-lg font-display-lg mb-6 text-surface-container-lowest" data-lang-en="Quality Flooring. Expertly Installed." data-lang-es="Pisos de Calidad. Instalados con Precisión.">Quality Flooring. Expertly Installed.</h1>
+<p class="text-body-lg font-body-lg mb-8 text-surface-container-low opacity-90 max-w-xl" data-lang-en="Top-Rated Orlando Flooring Specialists — Trusted, Licensed &amp; Insured. Serving Residential &amp; Commercial Clients in English &amp; Español with quality, precision, and care." data-lang-es="Especialistas en pisos en Orlando — Confiables, con Licencia y Seguro. Servicio residencial y comercial en inglés y español con máxima precisión.">Top-Rated Orlando Flooring Specialists — Trusted, Licensed &amp; Insured. Serving Residential &amp; Commercial Clients in English &amp; Español with quality, precision, and care.</p>
 <div class="flex flex-wrap gap-4 mb-6">
-<a class="border border-surface-container-lowest text-surface-container-lowest px-8 py-4 rounded text-label-bold font-label-bold hover:bg-surface-container-lowest hover:text-primary transition-colors" href="#">View Our Work</a>
+<a class="border border-surface-container-lowest text-surface-container-lowest px-8 py-4 rounded text-label-bold font-label-bold hover:bg-surface-container-lowest hover:text-primary transition-colors" data-lang-en="View Our Work" data-lang-es="Ver Nuestros Trabajos" href="#">View Our Work</a>
 </div>
 <div class="flex flex-wrap gap-4 text-sm font-label-bold text-surface-container-lowest opacity-90 items-center">
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary-fixed text-base">verified</span> Licensed &amp; Insured</span>
@@ -150,21 +156,21 @@
 </div>
 <div class="w-full lg:w-2/5">
 <div class="bg-surface-container-lowest p-8 rounded-lg shadow-xl">
-<h3 class="text-headline-md font-headline-md text-primary mb-2">Request an Estimate</h3>
-<p class="text-body-md text-on-surface-variant mb-6">Fill out the form below and we'll get back to you shortly.</p>
+<h3 class="text-headline-md font-headline-md text-primary mb-2" data-lang-en="Request an Estimate" data-lang-es="Solicite una Estimación">Request an Estimate</h3>
+<p class="text-body-md text-on-surface-variant mb-6" data-lang-en="Fill out the form below and we'll get back to you shortly." data-lang-es="Complete el formulario y le responderemos en breve.">Fill out the form below and we'll get back to you shortly.</p>
 <form class="space-y-4">
 <div>
-<label class="sr-only" for="hero-name">Full Name</label>
-<input class="w-full rounded border-outline-variant bg-surface px-4 py-3 text-on-surface focus:border-secondary focus:ring-secondary" id="hero-name" placeholder="Full Name" type="text"/>
+<label class="sr-only" data-lang-en="Full Name" data-lang-es="Nombre Completo" for="hero-name">Full Name</label>
+<input class="w-full rounded border-outline-variant bg-surface px-4 py-3 text-on-surface focus:border-secondary focus:ring-secondary" data-placeholder-en="Full Name" data-placeholder-es="Nombre Completo" id="hero-name" placeholder="Full Name" type="text"/>
 </div>
 <div>
-<label class="sr-only" for="hero-phone">Phone Number</label>
-<input class="w-full rounded border-outline-variant bg-surface px-4 py-3 text-on-surface focus:border-secondary focus:ring-secondary" id="hero-phone" placeholder="Phone Number" type="tel"/>
+<label class="sr-only" data-lang-en="Phone Number" data-lang-es="Número de Teléfono" for="hero-phone">Phone Number</label>
+<input class="w-full rounded border-outline-variant bg-surface px-4 py-3 text-on-surface focus:border-secondary focus:ring-secondary" data-placeholder-en="Phone Number" data-placeholder-es="Número de Teléfono" id="hero-phone" placeholder="Phone Number" type="tel"/>
 </div>
 <div>
-<label class="sr-only" for="hero-type">Flooring Type</label>
+<label class="sr-only" data-lang-en="Flooring Type" data-lang-es="Tipo de Piso" for="hero-type">Flooring Type</label>
 <select class="w-full rounded border-outline-variant bg-surface px-4 py-3 text-on-surface focus:border-secondary focus:ring-secondary" id="hero-type">
-<option value="">Select Flooring Type</option>
+<option data-lang-en="Select Flooring Type" data-lang-es="Seleccione el Tipo de Piso" value="">Select Flooring Type</option>
 <option value="vinyl">Luxury Vinyl</option>
 <option value="hardwood">Hardwood</option>
 <option value="laminate">Laminate</option>
@@ -172,7 +178,8 @@
 <option value="commercial">Commercial</option>
 </select>
 </div>
-<button class="w-full bg-[#f59e0b] text-white px-8 py-4 rounded text-label-bold font-label-bold hover:bg-[#d97706] transition-colors mt-2" type="button">Get My Free Estimate</button>
+<button class="w-full bg-[#f59e0b] text-white px-8 py-4 rounded text-label-bold font-label-bold hover:bg-[#d97706] transition-colors mt-2" data-lang-en="Get My Free Estimate" data-lang-es="Obtener Mi Estimación Gratis" type="button">Get My Free Estimate</button>
+<p class="text-xs text-center text-on-surface-variant font-medium pt-1" data-lang-en="🔒 100% Free &amp; No-Obligation. Response within 15 minutes." data-lang-es="🔒 100% Gratis y Sin Compromiso. Respuesta en 15 minutos.">🔒 100% Free &amp; No-Obligation. Response within 15 minutes.</p>
 </form>
 </div>
 </div>
@@ -188,7 +195,7 @@
 <div class="max-w-[1200px] mx-auto">
 <div class="flex justify-between items-end mb-6">
 <div>
-<h2 class="text-headline-lg font-headline-lg text-primary mb-2">Our Flooring Services</h2>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-2" data-lang-en="Our Flooring Services" data-lang-es="Nuestros Servicios de Pisos">Our Flooring Services</h2>
 <p class="text-body-md font-body-md text-on-surface-variant">Precision installation for every material type.</p>
 </div>
 <a class="hidden md:flex items-center gap-2 text-secondary text-label-bold font-label-bold hover:text-primary-container transition-colors" href="#">
@@ -203,7 +210,11 @@
 </div>
 <div class="p-5 flex flex-col flex-grow">
 <h4 class="text-body-lg font-body-lg font-semibold text-primary mb-2">Luxury Vinyl Plank Installation</h4>
-<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-4 flex-grow">Waterproof, durable, and versatile.</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-3">Waterproof, durable, and versatile.</p>
+<ul class="text-xs text-on-surface-variant space-y-1 mb-4 flex-grow">
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> 100% Waterproof &amp; Rigid Core</li>
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Pet &amp; Scratch Resistant</li>
+</ul>
 <span class="text-secondary text-label-bold font-label-bold uppercase tracking-wider text-xs">View Options &gt;</span>
 </div>
 </div>
@@ -214,7 +225,11 @@
 </div>
 <div class="p-5 flex flex-col flex-grow">
 <h4 class="text-body-lg font-body-lg font-semibold text-primary mb-2">Solid and Engineered Hardwood Flooring</h4>
-<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-4 flex-grow">Timeless elegance and natural beauty.</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-3">Timeless elegance and natural beauty.</p>
+<ul class="text-xs text-on-surface-variant space-y-1 mb-4 flex-grow">
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Authentic Natural Hardwood</li>
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Precision Tongue &amp; Groove Fitting</li>
+</ul>
 <span class="text-secondary text-label-bold font-label-bold uppercase tracking-wider text-xs">View Options &gt;</span>
 </div>
 </div>
@@ -225,7 +240,11 @@
 </div>
 <div class="p-5 flex flex-col flex-grow">
 <h4 class="text-body-lg font-body-lg font-semibold text-primary mb-2">Laminate Flooring Installation</h4>
-<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-4 flex-grow">Cost-effective and easy-to-maintain.</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-3">Cost-effective and easy-to-maintain.</p>
+<ul class="text-xs text-on-surface-variant space-y-1 mb-4 flex-grow">
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Cost-Effective &amp; Durable</li>
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Quick Turnaround Installation</li>
+</ul>
 <span class="text-secondary text-label-bold font-label-bold uppercase tracking-wider text-xs">View Options &gt;</span>
 </div>
 </div>
@@ -236,7 +255,11 @@
 </div>
 <div class="p-5 flex flex-col flex-grow">
 <h4 class="text-body-lg font-body-lg font-semibold text-primary mb-2">Residential and Commercial Carpet</h4>
-<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-4 flex-grow">Comfortable and quiet for any room.</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-3">Comfortable and quiet for any room.</p>
+<ul class="text-xs text-on-surface-variant space-y-1 mb-4 flex-grow">
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Premium Underlayment Included</li>
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Stain-Resistant &amp; Quiet Acoustic Comfort</li>
+</ul>
 <span class="text-secondary text-label-bold font-label-bold uppercase tracking-wider text-xs">View Options &gt;</span>
 </div>
 </div>
@@ -247,7 +270,11 @@
 </div>
 <div class="p-5 flex flex-col flex-grow">
 <h4 class="text-body-lg font-body-lg font-semibold text-primary mb-2">Commercial Flooring Solutions</h4>
-<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-4 flex-grow">Heavy-duty, specialized flooring.</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm line-clamp-2 mb-3">Heavy-duty, specialized flooring.</p>
+<ul class="text-xs text-on-surface-variant space-y-1 mb-4 flex-grow">
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Heavy Foot Traffic Grade</li>
+<li class="flex items-center gap-1.5"><span class="text-secondary font-bold">✓</span> Fast Off-Hours Commercial Scheduling</li>
+</ul>
 <span class="text-secondary text-label-bold font-label-bold uppercase tracking-wider text-xs">View Options &gt;</span>
 </div>
 </div>
@@ -257,7 +284,7 @@
 <!-- PROJECT SHOWCASE -->
 <section class="w-full bg-surface-container-lowest py-20 px-margin-desktop">
 <div class="max-w-[1200px] mx-auto">
-<h2 class="text-headline-lg font-headline-lg text-primary mb-6 text-center">See the Difference</h2>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-6 text-center" data-lang-en="See the Difference" data-lang-es="Vea la Diferencia">See the Difference</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
 <!-- Item 1 -->
 <div class="relative group overflow-hidden bg-surface-variant rounded md:col-span-2 md:row-span-2">
@@ -298,7 +325,7 @@
 <img alt="Quality Flooring Installation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsNqGStkXEgBQ85auuA27-LU0ZwBMjTN99Z9U6Jn8pG3mpfKUlQtoeOD9b6cprBv4cvE85GU3dCv2wTDG49k4pUo57R6zO3GwCRg4j3Irc1wR0rSSsLO58cGk5aGr_oBDc1IQWH_QgD6u7oMpEvDAzse_mJcbxqxDHx8W9kalpGZv365d2GCGdADdQ-aLY4-EUmsW3JBfAt-dk8iiDFDpiJacGk9q3fEZT2oDNyFSOg85UiWa_J1dmKCSv4olXNKVOShk"/>
 </div>
 <div>
-<h2 class="text-headline-lg font-headline-lg text-primary mb-6">Why P&amp;E Flooring Solutions?</h2>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-6" data-lang-en="Why P&amp;E Flooring Solutions?" data-lang-es="¿Por qué Elegir P&amp;E Flooring Solutions?">Why P&amp;E Flooring Solutions?</h2>
 <div class="space-y-6"><p class="text-body-md font-body-md text-on-surface-variant mb-6 pb-2 border-b border-surface-container-high">Family-owned local business based in South Orlando. Built on Colombian craftsmanship and dedicated to providing high-quality, reliable flooring installations across Central Florida.</p><div class="border-l-2 border-secondary pl-4"><h3 class="text-headline-md font-headline-md text-primary mb-1">Bilingual Service — Hablamos Español</h3><p class="text-body-md text-on-surface-variant">We speak your language (English &amp; Spanish). Seamless communication from consultation to completion.</p></div><div class="border-l-2 border-secondary pl-4"><h3 class="text-headline-md font-headline-md text-primary mb-1">Quality</h3><p class="text-body-md text-on-surface-variant">Premium materials and superior craftsmanship built to last.</p></div><div class="border-l-2 border-secondary pl-4"><h3 class="text-headline-md font-headline-md text-primary mb-1">Precision</h3><p class="text-body-md text-on-surface-variant">Meticulous attention to detail in every cut and seam.</p></div><div class="border-l-2 border-secondary pl-4"><h3 class="text-headline-md font-headline-md text-primary mb-1">Residential &amp; Commercial</h3><p class="text-body-md text-on-surface-variant">Expertise spanning cozy homes to expansive facilities.</p></div><div class="border-l-2 border-secondary pl-4"><h3 class="text-headline-md font-headline-md text-primary mb-1">Free Estimates</h3><p class="text-body-md text-on-surface-variant">Transparent pricing and clear communication from day one.</p></div></div>
 </div>
 </div>
@@ -307,7 +334,7 @@
 <!-- PROCESS -->
 <section class="w-full bg-surface-container-lowest py-20 px-margin-desktop border-b border-surface-container-high">
 <div class="max-w-[1200px] mx-auto">
-<h2 class="text-headline-lg font-headline-lg text-primary mb-10 text-center">Our Process</h2>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-10 text-center" data-lang-en="Our Process" data-lang-es="Nuestro Proceso">Our Process</h2>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-left relative">
 <!-- Step 1 -->
 <div class="relative z-10 bg-surface-container-lowest px-4">
@@ -340,7 +367,7 @@
 <!-- TESTIMONIALS -->
 <section class="w-full bg-surface py-20 px-margin-desktop">
 <div class="max-w-[1200px] mx-auto text-center">
-<h2 class="text-headline-lg font-headline-lg text-primary mb-2">What Our Orlando Clients Say</h2>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-2" data-lang-en="What Our Orlando Clients Say" data-lang-es="Lo Que Dicen Nuestros Clientes de Orlando">What Our Orlando Clients Say</h2>
 <div class="flex justify-center items-center gap-2 mb-10 bg-surface-container p-3 rounded-full inline-flex mx-auto">
 <div class="flex text-yellow-400">
 <span class="material-symbols-outlined text-lg" data-weight="fill">star</span>
@@ -352,6 +379,7 @@
 <span class="text-sm font-label-bold text-on-surface-variant">Rated 4.9 out of 5 Stars on Google Reviews in Greater Orlando</span>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
 <div class="bg-surface-container-lowest p-8 rounded border border-surface-container-high shadow-sm text-left">
 <div class="flex text-yellow-400 mb-4">
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
@@ -360,12 +388,13 @@
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
 </div>
-<p class="text-body-md text-on-surface-variant mb-6 italic">"P&amp;E Flooring completely transformed our living room. Their team was professional, clean, and incredibly detail-oriented. The luxury vinyl looks amazing."</p>
+<p class="text-body-md text-on-surface-variant mb-6 italic">"P&amp;E transformed our entire home in Hunter's Creek. Being able to communicate seamlessly in Spanish and English made the whole process stress-free. Flawless transitions and completed ahead of schedule!"</p>
 <div class="flex flex-col">
-<h4 class="text-label-bold text-primary font-bold">Sarah Jenkins</h4>
-<span class="text-xs text-on-surface-variant mt-1 flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Winter Park</span>
+<h4 class="text-label-bold text-primary font-bold">Carlos R.</h4>
+<span class="text-xs text-on-surface-variant mt-1 flex items-center gap-1">📍 Hunter's Creek, Orlando</span>
 </div>
 </div>
+<!-- Review 2 -->
 <div class="bg-surface-container-lowest p-8 rounded border border-surface-container-high shadow-sm text-left">
 <div class="flex text-yellow-400 mb-4">
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
@@ -374,12 +403,13 @@
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
 </div>
-<p class="text-body-md text-on-surface-variant mb-6 italic">"We hired them for our office renovation. They worked around our schedule and delivered flawless commercial carpet installation on time and under budget."</p>
+<p class="text-body-md text-on-surface-variant mb-6 italic">"Outstanding luxury vinyl plank installation in our Lake Nona home. Their team was meticulous with baseboards, left everything spotless every evening, and the floor looks spectacular."</p>
 <div class="flex flex-col">
-<h4 class="text-label-bold text-primary font-bold">Michael T.</h4>
-<span class="text-xs text-on-surface-variant mt-1 flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Downtown Orlando</span>
+<h4 class="text-label-bold text-primary font-bold">David &amp; Maria L.</h4>
+<span class="text-xs text-on-surface-variant mt-1 flex items-center gap-1">📍 Lake Nona, Orlando</span>
 </div>
 </div>
+<!-- Review 3 -->
 <div class="bg-surface-container-lowest p-8 rounded border border-surface-container-high shadow-sm text-left">
 <div class="flex text-yellow-400 mb-4">
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
@@ -388,10 +418,10 @@
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
 <span class="material-symbols-outlined text-base" data-weight="fill">star</span>
 </div>
-<p class="text-body-md text-on-surface-variant mb-6 italic">"The hardwood floors they installed in our home are stunning. The precision in the cuts around the fireplace was genuinely impressive. Highly recommended."</p>
+<p class="text-body-md text-on-surface-variant mb-6 italic">"We hired P&amp;E for our boutique commercial office in Winter Park. Their hardwood precision and attention to detail around existing fixtures was top notch. Highly recommended!"</p>
 <div class="flex flex-col">
-<h4 class="text-label-bold text-primary font-bold">David &amp; Emily R.</h4>
-<span class="text-xs text-on-surface-variant mt-1 flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Lake Nona</span>
+<h4 class="text-label-bold text-primary font-bold">Sarah T.</h4>
+<span class="text-xs text-on-surface-variant mt-1 flex items-center gap-1">📍 Winter Park, FL</span>
 </div>
 </div>
 </div>
@@ -400,17 +430,17 @@
 <!-- SERVICE AREAS -->
 <section class="w-full bg-surface-container-lowest py-20 px-margin-desktop border-y border-surface-container-high">
 <div class="max-w-[1200px] mx-auto text-center">
-<h2 class="text-headline-lg font-headline-lg text-primary mb-8">Our Central Florida Service Areas</h2>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-8" data-lang-en="Our Central Florida Service Areas" data-lang-es="Áreas de Cobertura en Florida Central">Our Central Florida Service Areas</h2>
 <div class="flex flex-wrap justify-center gap-4 text-on-surface-variant font-label-bold"><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Hunter's Creek (32837)</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Meadow Woods</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">South Orlando</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Lake Nona</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Downtown Orlando</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Winter Park</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Windermere</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Kissimmee</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Winter Garden</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Altamonte Springs</span><span class="bg-surface-container px-4 py-2 rounded-full border border-surface-container-high">Sanford</span></div>
 </div>
 </section>
 <!-- FINAL CTA -->
 <section class="w-full bg-primary py-24 px-margin-desktop text-center">
 <div class="max-w-3xl mx-auto">
-<h2 class="text-display-lg font-display-lg text-on-primary mb-4">Ready for a Better Floor?</h2>
+<h2 class="text-display-lg font-display-lg text-on-primary mb-4" data-lang-en="Ready for a Better Floor?" data-lang-es="¿Listo Para un Mejor Piso?">Ready for a Better Floor?</h2>
 <p class="text-body-lg font-body-lg text-surface-container-low opacity-90 mb-10">Let's talk about your flooring project.</p>
 <div class="flex flex-wrap justify-center gap-4">
-<a class="bg-surface-container-lowest text-primary-container px-8 py-4 rounded text-label-bold font-label-bold hover:bg-surface transition-colors" href="#">Get a Free Estimate</a>
+<a class="bg-surface-container-lowest text-primary-container px-8 py-4 rounded text-label-bold font-label-bold hover:bg-surface transition-colors" data-lang-en="Get a Free Estimate" data-lang-es="Solicitar Estimación Gratuita" href="#">Get a Free Estimate</a>
 </div>
 </div>
 </section>
@@ -430,12 +460,55 @@
 </div>
 <div>
 <h4 class="text-label-bold font-label-bold mb-4">Navigation</h4>
-<ul class="space-y-2"><div class="mb-3 inline-flex items-center gap-1.5 bg-secondary text-white text-xs font-label-bold px-3 py-1 rounded-full shadow-sm"><span class="material-symbols-outlined text-sm">verified</span> Atención al cliente 100% en Español</div><p class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-sm">location_on</span> 14049 Fairway Island Dr, Orlando, FL 32837</p><p class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-sm">call</span> English Line: <a class="hover:text-secondary-fixed transition-colors font-bold" href="tel:3212405710">(321) 240-5710</a></p><p class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-sm">support_agent</span> Hablamos Español: <a class="hover:text-secondary-fixed transition-colors font-bold" href="tel:3212290039">(321) 229-0039</a></p><p class="text-xs text-secondary-fixed pt-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">translate</span> Consultas y cotizaciones gratuitas en español e inglés.</p></ul>
+<ul class="space-y-2"><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Home</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">About</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Services</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Our Work</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Residential</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Commercial</a></li></ul>
 </div>
 <div>
 <h4 class="text-label-bold font-label-bold mb-4">Legal</h4>
-<ul class="space-y-2"><div class="mb-3 inline-flex items-center gap-1.5 bg-secondary text-white text-xs font-label-bold px-3 py-1 rounded-full shadow-sm"><span class="material-symbols-outlined text-sm">verified</span> Atención al cliente 100% en Español</div><p class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-sm">location_on</span> 14049 Fairway Island Dr, Orlando, FL 32837</p><p class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-sm">call</span> English Line: <a class="hover:text-secondary-fixed transition-colors font-bold" href="tel:3212405710">(321) 240-5710</a></p><p class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-sm">support_agent</span> Hablamos Español: <a class="hover:text-secondary-fixed transition-colors font-bold" href="tel:3212290039">(321) 229-0039</a></p><p class="text-xs text-secondary-fixed pt-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">translate</span> Consultas y cotizaciones gratuitas en español e inglés.</p></ul>
+<ul class="space-y-2"><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Privacy Policy</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Terms of Service</a></li><li class=""><a class="text-surface-variant dark:text-on-tertiary-container hover:text-white transition-colors duration-200 text-sm block" href="#">Contact Us</a></li></ul>
 </div>
 </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const btnEn = document.getElementById('btn-lang-en');
+        const btnEs = document.getElementById('btn-lang-es');
+
+        const translatableElements = document.querySelectorAll('[data-lang-en]');
+        const placeholderElements = document.querySelectorAll('[data-placeholder-en]');
+
+        function setLanguage(lang) {
+            translatableElements.forEach(el => {
+                const text = el.getAttribute('data-lang-' + lang);
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+
+            placeholderElements.forEach(el => {
+                const placeholder = el.getAttribute('data-placeholder-' + lang);
+                if (placeholder) {
+                    el.setAttribute('placeholder', placeholder);
+                }
+            });
+
+            if (lang === 'en') {
+                btnEn.className = "flex items-center gap-1 bg-primary text-on-primary px-2.5 py-1 rounded-full transition-all duration-200 cursor-default";
+                btnEs.className = "flex items-center gap-1 text-on-surface-variant hover:text-primary px-2.5 py-1 rounded-full transition-all duration-200 cursor-pointer";
+            } else {
+                btnEs.className = "flex items-center gap-1 bg-primary text-on-primary px-2.5 py-1 rounded-full transition-all duration-200 cursor-default";
+                btnEn.className = "flex items-center gap-1 text-on-surface-variant hover:text-primary px-2.5 py-1 rounded-full transition-all duration-200 cursor-pointer";
+            }
+        }
+
+        if (btnEn && btnEs) {
+            btnEn.addEventListener('click', function () {
+                setLanguage('en');
+            });
+
+            btnEs.addEventListener('click', function () {
+                setLanguage('es');
+            });
+        }
+    });
+</script>
 </body></html>
